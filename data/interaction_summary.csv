@@ -1,0 +1,12 @@
+category,item_a,item_b,database,evidence,identifier_or_pmid,notes
+sender_expression,TSHB (P01222),Pituitary thyrotropes,Human Protein Atlas,"Tissue enriched (pituitary gland); cell type enriched (thyrotropes); predicted secreted, secreted to blood",proteinatlas.org TSHB page,Single cell RNA also enhanced in spermatids; pituitary protein evidence considered stronger
+receiver_expression,TSHR (P16473),Thyroid glandular cells,Human Protein Atlas,Cell type enriched (thyroid gland - thyroid glandular cells),proteinatlas.org TSHR page,Thyroid follicular cell = thyroid glandular cell in HPA
+ligand_receptor,TSHB (P01222),TSHR (P16473),OmniPath,"Directed interaction, type post_translational; ligand-receptor resources LRdb, Cellinker, HPRD, connectomeDB2020, CellTalkDB, HPMR plus SIGNOR, NetPath, HINT",PMID 2558651; 12045258; 15571461; 20181794; 35940204; 35940205,TSH is a CGA + TSHB heterodimer
+string_network,"TSHR, TSHB, CGA, GNAS, PRKACA, CREB1, PAX8, TG, TPO",,STRING v12.5 (Homo sapiens),"9 nodes, 18 edges, expected edges 2, PPI enrichment p = 9.65e-12",,"Edges are functional associations, not direct binding or direction"
+string_enrichment,GO:0006590 Thyroid hormone generation,,STRING,"3 of 16, FDR 0.00055",,
+string_enrichment,hsa04918 Thyroid hormone synthesis (KEGG),,STRING,"8 of 73, FDR 1.88e-16",,
+string_enrichment,hsa04024 cAMP signaling pathway (KEGG),,STRING,"5 of 222, FDR 2.16e-06",,
+string_enrichment,WP2032 Thyroid stimulating hormone TSH signaling (WikiPathways),,STRING,"5 of 58, FDR 1.13e-08",,
+intact_validation,PRKACA (P17612),CREB1 (P16220),IntAct,Physical association; anti-bait coimmunoprecipitation; Homo sapiens (HT-29 cells); MI score 0.4,EBI-46451554; PMID 37501933,Does not show direct binding or phosphorylation
+intact_supporting,PRKACA (P17612),PRKAR1A (P10644),IntAct,Direct interaction; anti tag coimmunoprecipitation; in vitro; Homo sapiens,EBI-16107177; PMID 24855271,PRKAR1A not in STRING network; supporting pair only
+model_inference,TSHR -> GNAS -> PRKACA -> CREB1 -> PAX8 -> TG,,,"Inferred order, not shown by STRING or IntAct",,Dashed arrows in Figure 5
